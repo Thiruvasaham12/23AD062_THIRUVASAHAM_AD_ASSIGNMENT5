@@ -1,0 +1,126 @@
+/* Global Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #bbdefb, #e3f2fd, #ffffff);
+  min-height: 100vh;
+}
+
+/* Common container style */
+.form-container {
+  background: #ffffff;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(25, 118, 210, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Headings */
+.form-container h2 {
+  color: #1565c0;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Input Fields */
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  background: #e3f2fd;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input:focus {
+  border-color: #1565c0;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(25, 118, 210, 0.3);
+}
+
+/* Buttons */
+button {
+  width: 95%;
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  transform: scale(1.02);
+}
+
+/* Register/Login Text Links */
+span, .form-container p button {
+  color: #1565c0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+span:hover, .form-container p button:hover {
+  color: #0d47a1;
+  text-decoration: underline;
+}
+
+/* Welcome Page Styling */
+.welcome-page {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://prasadz.com/wp-content/uploads/2024/12/Prasads-Multiplex_BC.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Logout Button */
+.logout-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #0d47a1;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(1.02); }
+  to { opacity: 1; transform: scale(1); }
+}
